@@ -9,7 +9,7 @@
       <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="http://arcyf.com">ARCYF</a>
-      <a class="navbar-brand" href="/">YOUTH CAMP 2014</a>
+      <a class="navbar-brand" href="/">TEEN CAMP 2014</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -23,18 +23,17 @@
         <% if  !Settings.registration_ended? %>
         <% if signed_in? %>
         <li class="top-buttons">
-          <%= link_to 'MY DETAILS', camper_path,  :class => 'btn btn-info' %>
+          <%= link_to 'MY DETAILS', camper_path,  :class => 'btn btn-default custom-button' %>
         </li>
         <li class="top-buttons">
           <%= link_to 'LOGOUT', signout_path,  method: "delete", :class => 'btn btn-danger' %>
         </li>
         <% else %>
-        <li class="top-buttons">
-          
-          <%= link_to 'REGISTER', registration_new_path,  :class => 'btn btn-success' %>
+        <li class="top-buttons">          
+          <%= link_to 'REGISTER', registration_new_path,  :class => 'btn btn-default custom-button' %>
         </li>
         <li class="top-buttons">
-          <%= link_to 'LOGIN', login_path,  :class => 'btn btn-primary' %>
+          <%= link_to 'LOGIN', login_path,  :class => 'btn btn-default custom-button' %>
         </li>
         <% end %>
         <% else %>

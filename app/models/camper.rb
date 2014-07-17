@@ -20,13 +20,16 @@ class Camper
   field :residence, type: String
   field :role, type: String
 
-  field :emergency_contact, type: String
-  field :emergency_number, type: String
+  field :father_name, type: String
+  field :father_cell_number, type: String
+
+  field :mother_name, type: String
+  field :mother_cell_number, type: String
 
   field :church, type: Hash, default: {} #[:type, :name]
   field :occupation, type: Hash, default: {} #[:type,]
 
   validates :first_name, :last_name, :email, :phone_number,
   :residence, :arrival_day, :arrival_time, :date_of_birth, :nationality,
-  :role, :emergency_contact, :emergency_number, :gender, presence: true
+  :role, :father_name, :father_cell_number, :mother_name, :mother_cell_number, :gender, presence: true
 end

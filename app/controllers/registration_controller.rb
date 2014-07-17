@@ -120,11 +120,11 @@ class RegistrationController < ApplicationController
     params.require(:camper_form_object).permit(:first_name,  :last_name,  :other_names,
     :gender, :date_of_birth,  :email,  :nationality,
     :arrival_day,  :arrival_time,
-    :phone_number,  :residence,  :role,
-    :emergency_contact, :emergency_number,
+    :phone_number,  :residence,  :role,    
     :church, :other_church,
     :occupation, :school,  :school_location, :educational_level, :other_school,
-    :other_school_location,:confirm_email, :confirm_phone_number)
+    :other_school_location,:confirm_email, :confirm_phone_number, 
+    :father_name, :father_cell_number, :mother_name, :mother_cell_number)
   end
 
   def print

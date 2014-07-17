@@ -4,7 +4,7 @@ class CamperFormObject
                 :gender, :date_of_birth, :email, :confirm_email, :nationality,
                 :arrival_day, :arrival_time,
                 :phone_number, :confirm_phone_number, :residence, :role,
-                :emergency_contact, :emergency_number,
+                :father_name, :father_cell_number, :mother_name, :mother_cell_number,
                 :church, :other_church,
                 :occupation, :school, :school_location, :educational_level,
                 :other_school, :other_school_location
@@ -73,8 +73,10 @@ class CamperFormObject
     camper.arrival_time = form_object.arrival_time
     camper.residence = form_object.residence
     camper.role = form_object.role
-    camper.emergency_contact = form_object.emergency_contact
-    camper.emergency_number = form_object.emergency_number
+    camper.father_name = form_object.father_name
+    camper.father_cell_number = form_object.father_cell_number
+    camper.mother_name = form_object.mother_name
+    camper.mother_cell_number = form_object.mother_cell_number
     camper.date_of_birth = form_object.date_of_birth
 
     if form_object.church.downcase == 'other'
@@ -133,8 +135,10 @@ class CamperFormObject
     form_camper.arrival_time = camper.arrival_time
     form_camper.residence = camper.residence
     form_camper.role = camper.role
-    form_camper.emergency_contact = camper.emergency_contact
-    form_camper.emergency_number = camper.emergency_number
+    form_camper.father_name = camper.father_name
+    form_camper.father_cell_number = camper.father_cell_number
+    form_camper.mother_name = camper.mother_name
+    form_camper.mother_cell_number = camper.mother_cell_number
     form_camper.date_of_birth = camper.date_of_birth.class == String ? Date.parse(camper.date_of_birth) : camper.date_of_birth
 
     if camper.church['type'].downcase == 'default'

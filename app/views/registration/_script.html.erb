@@ -228,13 +228,13 @@
                 }
             }
 
-            if (!validate("camper_form_object_emergency_contact")) {
-                showError("Please provide a name for an Emergency Contact");
+            if (!validate("camper_form_object_father_name") && !validate("camper_form_object_mother_name")) {
+                showError("Please provide a name for your dad and(/or) mum.");
                 return false;
             }
 
-            if (!validate_fon("camper_form_object_emergency_number", filter)) {
-                showError("Please provide a valid 10 digit phone number for your Emergency Contact");
+            if (!validate_fon("camper_form_object_father_cell_number", filter) && !validate_fon("camper_form_object_mother_cell_number", filter)) {
+                showError("Please provide a valid 10 digit phone number for your Dad's/Mum's cell");
                 return false;
             }
 
