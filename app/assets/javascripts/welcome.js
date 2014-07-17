@@ -7,16 +7,17 @@
   }
 
   function setBackground(){    
-    $("body").css('background-color', colors[getARandomColor()]);  
+    // $("body").css('background-color', );  
+    $('body').animate({backgroundColor: colors[getARandomColor()]})
   }
 
   
   setTimeout(function (){
     setBackground();
-  },500);
+  },200);
   setInterval(function() {   
     setBackground();  
-  }, 12000);
+  }, 5000);
 
   
 })();
