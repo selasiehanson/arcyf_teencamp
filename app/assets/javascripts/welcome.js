@@ -12,12 +12,12 @@
   }
 
   
-  setTimeout(function (){
-    setBackground();
-  },200);
-  setInterval(function() {   
-    setBackground();  
-  }, 5000);
+  // setTimeout(function (){
+  //   setBackground();
+  // },200);
+  // setInterval(function() {   
+  //   setBackground();  
+  // }, 5000);
 
   
 })();

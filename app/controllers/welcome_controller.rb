@@ -1,7 +1,7 @@
 class WelcomeController < ApplicationController
 
   def index
-    @images = %w(02 04 05 07)
+    @images = %w(03 04 06 07 08 09)
     @page = 'index'    
   end
 
@@ -19,5 +19,9 @@ class WelcomeController < ApplicationController
 
   def media
     @page = 'media'
+  end
+
+  def purpose
+    @page = 'purpose'
   end
 end
