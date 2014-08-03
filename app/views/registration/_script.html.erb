@@ -1,6 +1,7 @@
   <script type="text/javascript">
     (function () {
         var currentChurch;
+        var currentRole;
         var currentSchool;
         var currentSchoolLocation;
 
@@ -9,12 +10,15 @@
         var otherSchoolLocation = $("#camper_form_object_other_school_location");
         var otherSchool = $("#camper_form_object_other_school");
 
-        var ids = ['camper_form_object_email', 'camper_form_object_confirm_email', 'camper_form_object_phone_number', 'camper_form_object_confirm_phone_number'];
+        var ids = ['camper_form_object_email', 'camper_form_object_confirm_email', 'camper_form_object_phone_number', 'camper_form_object_confirm_phone_number','camper_form_object_occupation_student','camper_form_object_occupation_worker'];
 
         var email = $("#"+ids[0]);
         var emailConfirm = $("#"+ids[1]);
         var phoneNumber = $("#"+ids[2]);
         var phoneNumberConfirm = $("#"+ids[3]);
+
+        var student=$("#"+ids[4]);
+        var worker=$("#"+ids[5]);
 
         var errorBox = $(".error-box");
         var ERR_MESSAGES = {
@@ -35,13 +39,15 @@
         }
 
         //hide what needs to be hidden        
-        function hideDefaults() {
-            studentDetails.hide();
+        function doDefaults() {
+            worker.parent().hide();
+            student.prop('checked',true);
+            //studentDetails.hide();
             otherSchool.parent().hide();
             otherSchoolLocation.parent().hide();
             otherChurch.parent().hide();
         }
-        hideDefaults();        
+        doDefaults();        
         
         var ourChurch = $("#camper_form_object_church");
         var currentOccupation = $("input[name='camper_form_object[occupation]']:checked").val();
@@ -51,6 +57,10 @@
         $("input[name='camper_form_object[occupation]']").change(function () {
             currentOccupation = $(this).val();
             checkOccupation(currentOccupation);
+        });
+        $("#camper_form_object_role").change(function () {
+            currentRole = $(this).val();
+            checkRole(currentRole);
         });
 
         
@@ -76,6 +86,14 @@
                 otherChurch.parent().hide();
             }
         }
+        function checkRole(currentRole) {
+            if (currentRole.toLocaleLowerCase() !="camper") {
+                worker.parent().show();
+            } else{
+                worker.parent().hide();
+            }
+        }
+
 
         function checkSchool(currentSchool) {
             if (currentSchool == "other")
