@@ -4,7 +4,6 @@ class Api::CampersController < ApplicationController
   end
 
   def show
-    render json: Camper.find(params[:id])
-    
+    render json: Camper.find(params[:id])    
   end
 end
