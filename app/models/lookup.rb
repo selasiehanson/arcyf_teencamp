@@ -23,15 +23,12 @@ class Lookup
      { name: "camper" },
      { name: "committee" },  
      { name: "prayer team " },
-     { name: "worship/tech team" },
+     { name: "supervisor" },
   ]
 
    ARRIVAL_DAYS = [
      { name: "wednesday" },
-     { name: "thursday" },
-     { name: "friday" },
-     { name: "saturday" },
-     { name: "sunday" }
+     {name: "thursday" }
    ]
 
    ARRIVAL_TIMES = [
