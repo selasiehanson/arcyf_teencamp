@@ -1,5 +1,6 @@
 class Camper
   include Mongoid::Document
+  include Mongoid::Timestamps
 
   field :is_admin, type: Boolean, default: false
   field :first_name, type: String
