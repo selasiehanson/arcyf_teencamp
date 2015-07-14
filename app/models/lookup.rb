@@ -23,7 +23,9 @@ class Lookup
      { name: "camper" },
      { name: "committee" },  
      { name: "prayer team " },
+     { name: "music group" },
      { name: "supervisor" },
+     { name: "tech team " },
   ]
 
    ARRIVAL_DAYS = [

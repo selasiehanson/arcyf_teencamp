@@ -53,7 +53,7 @@
       </div>
 
       <div class="form-group col-md-4 col-sm-4" id='date_of_birth_container'>
-        <% start_year = 1950; end_year = Time.now.year - 10 ; %>
+        <% start_year = 1950; end_year = Time.now.year - 11 ; %>
         <%= f.label :date_of_birth %>
         <br>
         <%= f.date_select :date_of_birth, start_year: start_year, end_year: end_year, with_css_classes: true %>
