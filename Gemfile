@@ -3,7 +3,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
-gem "mongoid", git: "https://github.com/mongoid/mongoid.git"
+#gem "mongoid", git: "https://github.com/mongoid/mongoid.git"
+gem 'mongoid', '~> 5.1.0'
 
 gem 'bson_ext'
 
