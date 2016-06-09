@@ -24,7 +24,6 @@ class Lookup
      { name: "committee" },  
      { name: "prayer team " },
      { name: "music group" },
-     { name: "supervisor" },
      { name: "tech team " },
   ]
 
