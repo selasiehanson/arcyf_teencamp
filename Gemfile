@@ -32,12 +32,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 # for vuejs admin panel
 gem 'axios_rails'
-gem 'vuejs-rails
-
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
+gem 'vuejs-rails'
 
 group :development do
   gem 'guard-livereload'
