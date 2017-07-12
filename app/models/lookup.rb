@@ -21,11 +21,10 @@ class Lookup
 
   ROLES = [
      { name: "camper" },
+     { name: "supervisor" }, 
      { name: "committee" },  
      { name: "prayer team " },
-     { name: "music group" },
-     { name: "tech team " },
-  ]
+   ]
 
    ARRIVAL_DAYS = [
      { name: "wednesday" },
