@@ -17,6 +17,7 @@
 //require ./libs/bootstrap-datepicker.js
 //= require ./libs/select2.js
 //= require axios
+//= require vue
 //= require ../vue/app.js
 //= require_tree ../
 //= require_tree .
