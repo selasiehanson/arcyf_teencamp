@@ -27,7 +27,7 @@
                 <a style="margin-right: 20px;" href="" class="pull-right btn btn-default btn-sm" ng-click="export()">
                     <i class="glyphicon glyphicon-download"></i> Download CSV
                 </a>
-                <span class="pull-right fetching" >fetching....</span>
+                <span class="pull-right fetching" >Total Registered:{{ campers.length }}</span>
             </h3>
         </div>
         <table class="table table-bordered table-striped">
@@ -47,8 +47,8 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="camper in campers">
-                    <td> .</td>
+                <tr v-for="(camper,index) in campers">
+                    <td> {{ index + 1 }} </td>
                     <td> {{ camper.last_name }} {{ camper.first_name}} {{ camper.other_names}} </td>
                     <td> {{ camper.gender }} </td>
                     <td> {{ camper.date_of_birth }} </td>
