@@ -59,6 +59,6 @@ class School
       { name:  "Wesley Girls' Senior High" },
       { name:  "Winneba Senior High" },
       { name:  "Word Of Faith Christian School" },
-      { name:  "other" }
+      { name:  "Other" }
   ]
 end
