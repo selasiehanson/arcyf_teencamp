@@ -1,5 +1,5 @@
 module Settings
-  REGISTRATION_END_DATE = "2018-8-8"
+  REGISTRATION_END_DATE = "2019-9-20"
 
   def Settings.registration_ended?
     Date.today > Date.parse(REGISTRATION_END_DATE)
