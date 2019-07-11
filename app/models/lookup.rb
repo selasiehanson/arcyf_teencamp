@@ -27,14 +27,12 @@ class Lookup
    ]
 
    ARRIVAL_DAYS = [
-     { name: "Wednesday" },
-     {name: "Thursday" }
+     {name: "Sunday" },
+    
    ]
 
    ARRIVAL_TIMES = [
      { name: "Morning" },
-     { name: "Afternoon" },
-     { name: "Evening" }
    ]
 
    CHURCHES = [
