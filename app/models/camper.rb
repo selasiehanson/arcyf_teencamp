@@ -9,6 +9,7 @@ class Camper
   field :gender, type: String
 
   field :arrival_day, type: String
+  field :tshirt_size, type: String
   field :arrival_time, type: String
   field :date_of_birth, type: Date
 
