@@ -31,6 +31,13 @@ class Lookup
      { name: "wednesday" },
      {name: "thursday" }
    ]
+  
+  TSHIRT_SIZE = [
+    { name: "small" }
+    { name: "medium" }
+    { name: "large" }
+    { name: "extra large" }
+   ]
 
    ARRIVAL_TIMES = [
      { name: "morning" },
