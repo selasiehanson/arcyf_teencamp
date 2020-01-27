@@ -82,6 +82,7 @@ class RegistrationController < ApplicationController
     @roles = Lookup::ROLES.collect {|p| [ p[:name], p[:name] ] }
     @arrival_days = Lookup::ARRIVAL_DAYS.collect {|p| [ p[:name], p[:name] ] }
     @arrival_times = Lookup::ARRIVAL_TIMES.collect {|p| [ p[:name], p[:name] ] }
+    @tshirt_size = Lookup::TSHIRT_SIZE.collect {|p| [ p[:name], p[:name] ] }
     @churches = Lookup::CHURCHES.collect {|p| [ p[:name], p[:name] ] }
     if @camper  
       @selected_country = @camper.nationality
@@ -119,7 +120,7 @@ class RegistrationController < ApplicationController
   def camper_params
     params.require(:camper_form_object).permit(:first_name,  :last_name,  :other_names,
     :gender, :date_of_birth,  :email,  :nationality,
-    :arrival_day,  :arrival_time,
+    :arrival_day,  :arrival_time, :tshirt_size,
     :phone_number,  :residence,  :role,    
     :church, :other_church,
     :occupation, :school,  :school_location, :educational_level, :other_school,
