@@ -27,8 +27,13 @@ class Lookup
    ]
 
    ARRIVAL_DAYS = [
+     {name: "Wednesday" },
+     {name: "Thursday" },
+     {name: "Friday" },
+     {name: "Saturday" },
      {name: "Sunday" },
-    
+     {name: "Monday" },
+     {name: "Tuesday" },
    ]
 
    ARRIVAL_TIMES = [
