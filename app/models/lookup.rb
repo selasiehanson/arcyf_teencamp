@@ -26,6 +26,13 @@ class Lookup
      { name: "Prayer team " },
    ]
 
+   TSHIRT_SIZE = [
+     { name: "small" },
+     { name: "medium" }, 
+     { name: "large" },  
+     { name: "extra large" },
+   ]  
+  
    ARRIVAL_DAYS = [
      {name: "Wednesday" },
      {name: "Thursday" },
