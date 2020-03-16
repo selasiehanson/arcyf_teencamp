@@ -1,7 +1,7 @@
 module SessionsHelper
   def sign_in(user)
     session[:current_user_id] = user.id.to_s
-    self.current_user = user    
+    self.current_user = user
   end
 
   def sign_out
@@ -19,6 +19,5 @@ module SessionsHelper
 
   def current_user
     @_current_user ||= session[:current_user_id] && Camper.find(session[:current_user_id])
-
   end
 end

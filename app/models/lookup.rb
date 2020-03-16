@@ -10,32 +10,41 @@ class Lookup
     { name: "Upper West Region (Wa)" },
     { name: "Volta Region (Ho)" },
     { name: "Western Region (Sekondi-Takoradi)" },
-    { name: "other" }
+    { name: "Other" }
   ]
 
   EDUCATIONAL_LEVELS = [
-     { name: "jhs student" },
-     { name: "shs" },
-     { name: "tertiary" }
+     { name: "Jhs student" },
+     { name: "Shs" },
+     { name: "Tertiary" }
    ]
 
   ROLES = [
-     { name: "camper" },
-     { name: "committee" },  
-     { name: "prayer team " },
-     { name: "music group" },
-     { name: "tech team " },
-  ]
+     { name: "Camper" },
+     { name: "Supervisor" }, 
+     { name: "Committee" },  
+     { name: "Prayer team " },
+   ]
 
+   TSHIRT_SIZE = [
+     { name: "small" },
+     { name: "medium" }, 
+     { name: "large" },  
+     { name: "extra large" },
+   ]  
+  
    ARRIVAL_DAYS = [
-     { name: "wednesday" },
-     {name: "thursday" }
+     {name: "Wednesday" },
+     {name: "Thursday" },
+     {name: "Friday" },
+     {name: "Saturday" },
+     {name: "Sunday" },
+     {name: "Monday" },
+     {name: "Tuesday" },
    ]
 
    ARRIVAL_TIMES = [
-     { name: "morning" },
-     { name: "afternoon" },
-     { name: "evening" }
+     { name: "Morning" },
    ]
 
    CHURCHES = [

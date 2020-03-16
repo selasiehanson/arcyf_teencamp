@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails', '4.2.8'
 
 #gem "mongoid", git: "https://github.com/mongoid/mongoid.git"
 gem 'mongoid', '~> 5.1.0'
@@ -30,6 +30,9 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+# for vuejs admin panel
+gem 'axios_rails'
+gem 'vuejs-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -41,7 +44,7 @@ group :development do
 end
 
 
-ruby "2.1.0"
+ruby "2.2.0"
 
 
 # Use ActiveModel has_secure_password

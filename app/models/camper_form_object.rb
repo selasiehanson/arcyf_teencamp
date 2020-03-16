@@ -2,7 +2,7 @@ class CamperFormObject
 
   attr_accessor :is_admin, :first_name, :last_name, :other_names,
                 :gender, :date_of_birth, :email, :confirm_email, :nationality,
-                :arrival_day, :arrival_time,
+                :tshirt_size, :arrival_day, :arrival_time,
                 :phone_number, :confirm_phone_number, :residence, :role,
                 :father_name, :father_cell_number, :mother_name, :mother_cell_number,
                 :church, :other_church,
@@ -69,6 +69,7 @@ class CamperFormObject
     camper.other_names = form_object.other_names
     camper.gender = form_object.gender
     camper.nationality = form_object.nationality
+    camper.tshirt_size = form_object.tshirt_size
     camper.arrival_day = form_object.arrival_day
     camper.arrival_time = form_object.arrival_time
     camper.residence = form_object.residence
@@ -131,6 +132,7 @@ class CamperFormObject
     form_camper.other_names = camper.other_names
     form_camper.gender = camper.gender
     form_camper.nationality = camper.nationality
+    form_camper.tshirt_size = camper.tshirt_size
     form_camper.arrival_day = camper.arrival_day
     form_camper.arrival_time = camper.arrival_time
     form_camper.residence = camper.residence
