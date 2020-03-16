@@ -35,14 +35,15 @@
                 <tr>
                     <th class="ax-grid-action-1">#</th>
                     <th>Name</th>
-                    <th>Gender</th>
-                    <th>Date Of Birth</th>
+                    <th>M/F</th>
+                    <th>DOB</th>
                     <th>Email</th>
                     <th>Phone number</th>
                     <th>Church</th>
                     <th>Arrival Day</th>
                     <th>Arrival time</th>
                     <th>Residence</th>
+                    <th>Tshirt</th>
                     <th class="ax-grid-action-1"></th>
                 </tr>
             </thead>
@@ -50,7 +51,7 @@
                 <tr v-for="(camper,index) in campers">
                     <td> {{ index + 1 }} </td>
                     <td> {{ camper.last_name }} {{ camper.first_name}} {{ camper.other_names}} </td>
-                    <td> {{ camper.gender }} </td>
+                    <td> {{ camper.gender==="male"?"M":"F"}} </td>
                     <td> {{ camper.date_of_birth }} </td>
                     <td> {{ camper.email }} </td>
                     <td> {{ camper.phone_number }} </td>
@@ -58,6 +59,7 @@
                     <td> {{ camper.arrival_day}}</td>
                     <td> {{ camper.arrival_time}}</td>
                     <td> {{ camper.residence }}</td>
+                    <td> {{ camper.tshirt_size }}</td>
                     <td>
                         <a href=#>
                             <i class="glyphicon glyphicon-pencil"></i>

@@ -24,7 +24,7 @@
           <th class="ax-grid-action-1">#</th>
           <th>Name</th>
           <th>Gender</th>
-          <th>Date Of Birth</th>
+          <th>DOB/th>
           <th>Email</th>
           <th>Phone number</th>
           <th>Church</th>
@@ -37,13 +37,14 @@
         <tr ng-repeat="camper in campers">
           <td> {{ $index + 1}}.</td>
           <td> {{ camper.last_name }} {{ camper.first_name}} {{ camper.other_names}} </td>
-          <td> {{ camper.gender }} </td>
+          <td> {{ (camper.gender==="male")?"M":"F" }} </td>
           <td> {{ camper.date_of_birth }} </td>
           <td> {{ camper.email }} </td>
           <td> {{ camper.phone_number }} </td>
           <td> {{ camper.church.name}}</td>
           <td> {{ camper.arrival_day}}</td>
           <td> {{ camper.arrival_time}}</td>
+          <td>{{camper.tshirt_size}}</td>
           <td>
             <a ng-click="changeSizes()" ui-sref=".show({    id:camper._id.$oid})" >
             <i class="glyphicon glyphicon-pencil"></i>
