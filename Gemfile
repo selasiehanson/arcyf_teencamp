@@ -9,7 +9,7 @@ gem 'mongoid', '~> 5.1.0'
 gem 'bson_ext'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails', '~> 4.0.5'
 
 gem 'bootstrap-sass', '~> 3.0.2.0'
 
@@ -17,7 +17,7 @@ gem 'bootstrap-sass', '~> 3.0.2.0'
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.0.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
