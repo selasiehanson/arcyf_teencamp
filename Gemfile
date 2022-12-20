@@ -9,7 +9,7 @@ gem 'mongoid', '~> 5.1.0'
 gem 'bson_ext'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0.5'
+gem 'sass-rails', '~> 6.0.0'
 
 gem 'bootstrap-sass', '~> 3.0.2.0'
 
