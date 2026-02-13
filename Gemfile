@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '5.2.7.1'
 
 #gem "mongoid", git: "https://github.com/mongoid/mongoid.git"
-gem 'mongoid', '~> 5.1.0'
+gem 'mongoid', '~> 7.6.1'
 
 gem 'bson_ext'
 
